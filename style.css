@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/Users/jacobmora/CS/Projects/repos/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    background-color: hsl(32, 50%, 90%)
+}
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: 'Young Serif', serif;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+
+}
+p, li {
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+h4 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+}
+
+strong {
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+.pagewrapper {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 60vh;
+    height: auto;
+    margin: 2.5vh auto;
+    overflow-y: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.preparation-box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(322, 100%, 98%);
+    padding: .75rem;
+    border-radius: 1.5rem;
+}
+
+p, h3, h4 {
+    padding: .2rem;
+}
+
+li {
+    padding: .38rem;
+}
+
+.header, .preparation, .ingredients, .instructions, .nutrition-table {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.grey-line {
+    width: 100%;
+    height: .07rem;
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: .4rem;
+}
+
+div {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.Calories p, .Calories h4, .Carbs p, .Carbs h4, .Fat p, .Fat h4, .Protein p, .Protein h4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+} 
+
+.Calories, .Carbs, .Fat, .Protein {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
